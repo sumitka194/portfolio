@@ -1,49 +1,29 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Sumit Kumar portfolio website",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack --config config/webpack.development.js",
-    "clean": "rm -rf dist",
-    "start": "yarn clean && webpack serve --open --config config/webpack.development.js",
-    "watch": "yarn clean && webpack --watch --config config/webpack.development.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sumitka194/sumitka194.github.io.git"
-  },
-  "keywords": [
-    "portfolio",
-    "frontend",
-    "resume",
-    "sumit",
-    "kumar",
-    "reactjs",
-    "website"
-  ],
-  "author": "Sumit Kumar",
-  "license": "Apache License",
-  "bugs": {
-    "url": "https://github.com/sumitka194/sumitka194.github.io/issues"
-  },
-  "homepage": "https://github.com/sumitka194/sumitka194.github.io#readme",
   "dependencies": {
-    "lucide-react": "^0.471.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "framer-motion": "^12.23.12",
+    "next": "15.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "babel-loader": "^9.2.1",
-    "html-webpack-plugin": "^5.6.3",
-    "tailwindcss": "^3.4.17",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
